@@ -12,6 +12,9 @@
         </a>
       </article>
     </section>
+    <div v-show="scrollLoading" class="loading-spinner">
+      <i class="fa-solid fa-spinner"></i>
+    </div>
   </main>
 </template>
 
@@ -99,5 +102,30 @@ article.video-row h4 {
   line-height: 1.25;
   font-weight: 500;
   letter-spacing: -0.01rem;
+}
+
+div.loading-spinner {
+  display: flex;
+  padding: 0.5rem 0 1rem;
+}
+
+div.loading-spinner > i {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  font-size: 2rem;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 </style>

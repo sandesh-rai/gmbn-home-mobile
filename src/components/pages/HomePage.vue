@@ -22,18 +22,42 @@ export default {
   name: 'HomePage',
   data () {
     return {
-      videos: []
+      videos: [],
+      scrollPage: 1,
+      scrollLoading: false,
     }
   },
   methods: {
     formatDate(date) {
       return moment(date).format("Do MMMM YYYY")
-    }
-  },
-  mounted () {
-    axios
+    },
+    getInitialVideos() {
+      axios
       .get('http://localhost:8080/api/videos')
       .then(response => (this.videos = response.data.videos))
+    },
+    getNextVideos(){
+      axios.get(`http://localhost:8080/api/videos?limit=12&offset=${12*this.scrollPage}`)
+      .then(response => {
+            this.videos = [...this.videos, ...response.data.videos];
+            this.scrollPage += 1;
+            this.scrollLoading = false;
+          });
+    },
+    handleScroll() {
+			if (
+				(window.scrollY + window.innerHeight >= document.body.scrollHeight - 50) && !this.scrollLoading
+			) {
+        this.scrollLoading = true;
+        this.getNextVideos();
+			}
+		},
+  },
+  beforeMount() {
+    this.getInitialVideos();
+  },
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll);
   }
 }
 </script>

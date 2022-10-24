@@ -4,13 +4,27 @@
       <h3>
         Latest Videos
       </h3>
+      <article>
+
+      </article>
     </section>
   </main>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'HomePage',
+  data () {
+    return {
+      videoData: []
+    }
+  },
+  mounted () {
+    axios
+      .get('http://localhost:8080/api/videos')
+      .then(response => (this.videoData = response.data.videos))
+  }
 }
 </script>
 

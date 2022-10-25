@@ -2,7 +2,7 @@
   <main>
     <section class="latest-videos">
       <h3>
-        Latest Videos
+        {{'Videos from ' + selectedArchive}}
       </h3>
       <article v-for="video in videos" :key="video._id">
         <HomePageVideoRow :video="video"/>
@@ -25,6 +25,11 @@ export default {
             scrollPage: 1,
             scrollLoading: false,
         };
+    },
+    props: {
+      selectedArchive: {
+        type: String,
+      }
     },
     methods: {
         getInitialVideos() {

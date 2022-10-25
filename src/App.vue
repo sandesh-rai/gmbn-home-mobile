@@ -1,7 +1,7 @@
 <template>
   <div>
-    <AppHeader/>
-    <HomePage/>
+    <AppHeader @archiveSelected="(val) => selectedArchive = val"/>
+    <HomePage :selectedArchive="selectedArchive"/>
     <AppFooter/>
   </div>
 </template>
@@ -17,7 +17,12 @@ export default {
     AppHeader,
     AppFooter,
     HomePage
-}
+  },
+  data(){
+    return {
+      selectedArchive: null,
+    }
+  }
 }
 </script>
 

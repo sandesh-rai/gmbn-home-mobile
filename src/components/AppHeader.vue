@@ -58,6 +58,7 @@ header button.navbar-button {
     background-color:transparent;
     padding: 0.5rem;
     cursor: pointer;
+    border: none;
 }
 
 button.navbar-button i.navbar-search {

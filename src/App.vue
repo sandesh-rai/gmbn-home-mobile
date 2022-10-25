@@ -1,21 +1,21 @@
 <template>
   <div>
-    <TheHeader/>
+    <AppHeader/>
     <HomePage/>
-    <TheFooter/>
+    <AppFooter/>
   </div>
 </template>
 
 <script>
-import TheHeader from './components/TheHeader.vue';
-import TheFooter from './components/TheFooter.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
 import HomePage from './components/pages/HomePage.vue';
 
 export default {
   name: 'App',
   components: {
-    TheHeader,
-    TheFooter,
+    AppHeader,
+    AppFooter,
     HomePage
 }
 }

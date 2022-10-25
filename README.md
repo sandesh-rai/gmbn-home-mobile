@@ -1,24 +1,31 @@
-# gmbn-home-mobile
+## Getting Started - GMBN Home Page for Mobile (Frontend Task)
 
-## Project setup
-```
-npm install
+### Prerequisites
+
+For this project you need [__Node__](https://nodejs.org/en/) installed on your machine with [__Npm__](https://www.npmjs.com/) or [__Yarn__](https://yarnpkg.com)
+
+### Installing
+
+You can clone this repository using __Git__:
+```bash
+git clone https://github.com/sandesh-rai/gmbn-home-mobile.git
 ```
 
-### Compiles and hot-reloads for development
+Or download the repository [here](https://github.com/sandesh-rai/gmbn-home-mobile/archive/refs/heads/main.zip)
+
+---
+
+Open a terminal and type, inside the directory:
+```bash
+npm install 
+# OR
+yarn install
 ```
+
+for installing all the dependencies. At the end type, in the same folder:
+```bash
 npm run serve
+# OR
+yarn serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+for running the Vue.js development server. It will be up and running at this address: http://localhost:8080

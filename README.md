@@ -30,6 +30,8 @@ yarn serve
 ```
 for running the Vue.js development server. It will be up and running at this address: http://localhost:8080
 
+---
+
 ### Features Implemented
 
 * Infinite scrolling
@@ -56,6 +58,8 @@ for running the Vue.js development server. It will be up and running at this add
 * Improve styling of drop-down menu
 
 * Filter button next to search bar to filter with options such as 'Sort By', or to toggle visibility of archive drop-down menu
+
+---
 
 ### Screenshot
 <img src="https://github.com/sandesh-rai/gmbn-home-mobile/blob/main/src/assets/Screenshot.jpg" style='height: 450px; margin-right:20px'>

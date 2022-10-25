@@ -29,3 +29,7 @@ npm run serve
 yarn serve
 ```
 for running the Vue.js development server. It will be up and running at this address: http://localhost:8080
+
+### Screenshot
+<img src="https://github.com/sandesh-rai/gmbn-home-mobile/blob/main/src/assets/Screenshot.jpg" style='height: 450px; margin-right:20px'>
+

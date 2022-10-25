@@ -2,7 +2,10 @@
   <main>
     <section class="latest-videos">
       <h3>
-        {{'Videos from ' + selectedArchive}}
+        <span v-if="selectedArchive != 'Latest Videos'">
+          {{'Videos from '}}
+        </span>
+        {{selectedArchive}}
       </h3>
       <article v-for="video in videos" :key="video._id">
         <HomePageVideoRow :video="video"/>

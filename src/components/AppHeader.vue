@@ -7,12 +7,12 @@
             <a class="navbar-brand" href="/">
                 <img class="logo--mobile" src="../assets/gmbnLogo-text.svg" alt="GMBN Logo"/>
             </a>
-            <button class="navbar-button" @click="showSearchBar = !showSearchBar">
-                <i class="fa-solid fa-magnifying-glass navbar-search"></i>
+            <button class="navbar-button">
+                <i class="fa-solid fa-ellipsis-vertical navbar-options"></i>
             </button>
         </nav>
 
-        <form v-if="showSearchBar">
+        <form>
             <input type="text" placeholder="Search"/>
         </form>
     </header>
@@ -20,11 +20,6 @@
 
 <script>
 export default {
-    data() {
-        return {
-            showSearchBar: false,
-        }
-    }
 }
 </script>
 
@@ -61,9 +56,10 @@ header button.navbar-button {
     border: none;
 }
 
-button.navbar-button i.navbar-search {
+button.navbar-button i.navbar-options {
     color: #fff;
     font-size: 1rem;
+    padding: 0.5rem;
 }
 
 header form {
@@ -80,6 +76,6 @@ header form > input{
     border: 0.125em solid rgb(246, 246, 246);
     box-shadow: rgb(0 0 0 / 12%) 0px 0.25em 0.25em;
     text-indent: 1em;
-    margin: 0.75em auto;
+    margin: 0.75em auto 0.25em;
 }
 </style>

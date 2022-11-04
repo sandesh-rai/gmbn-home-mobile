@@ -1,4 +1,4 @@
-## Getting Started - GMBN Home Page for Mobile (Frontend Task)
+## Getting Started - GMBN Home Page for Mobile (Infinite Scrolling feature)
 
 ### Prerequisites
 

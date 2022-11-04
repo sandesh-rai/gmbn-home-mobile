@@ -1,4 +1,4 @@
-## Getting Started - GMBN Home Page for Mobile (Infinite Scrolling feature)
+## Getting Started - Simple Implementation of Infinite Scrolling for web app with Vue
 
 ### Prerequisites
 
@@ -32,16 +32,12 @@ for running the Vue.js development server. It will be up and running at this add
 
 ---
 
-### Features Implemented
+### Feature Implemented
 
 * Infinite scrolling
   * This page-design approach automatically loads new videos when the user is at the bottom of the page.
   * This replaces the action of the 'Show more' button previously at the bottom of the page.
   * This is similar to other video apps like YouTube show content to users.
-
-* Drop-down menu for viewing archives (doesn't make an API call currently)
-  * The archive for viewing past videos has been moved to a more convenient location as a drop-down menu at the top of the page.
-  * This is a more familiar location as options for filtering by different criteria are usually located near to the search bar.
 
 ### Future Improvements
 
@@ -61,6 +57,5 @@ for running the Vue.js development server. It will be up and running at this add
 
 ---
 
-### Screenshot
-<img src="https://github.com/sandesh-rai/gmbn-home-mobile/blob/main/src/assets/Screenshot.jpg" style='height: 450px; margin-right:20px'>
-
+### Demo of Infinite Scroll
+![Infinite Scroll Demo](https://github.com/sandesh-rai/gmbn-home-mobile/blob/main/src/assets/InfiniteScrollDemo.gif)
